@@ -1,0 +1,25 @@
+{
+  "name": "magic_mouse",
+  "version": "1.0.0",
+  "description": "A Collection of mouse effects",
+  "main": "gulpfile.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify-es": "^2.0.0",
+    "node-sass": "^4.13.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "magic",
+    "mouse"
+  ],
+  "author": "Phuc Hong.",
+  "license": "MIT"
+}
