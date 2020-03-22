@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "A Collection of mouse effects",
   "main": "gulpfile.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
@@ -18,7 +17,11 @@
   },
   "keywords": [
     "magic",
-    "mouse"
+    "mouse",
+    "magic mouse",
+    "magic cursor",
+    "mouse effect",
+    "cursor effect"
   ],
   "author": "Phuc Hong.",
   "license": "MIT"
