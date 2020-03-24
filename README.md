@@ -10,33 +10,33 @@ MagicMouse.js is a vanilla javascript library so you DON'T need to include any o
 You just need to include 2 things to your HTML :
 
 ### Put the CSS file to your head tag:
-
-    <link rel="stylesheet" href="dist/magic-mouse.css" />
-
+````html
+  <link rel="stylesheet" href="dist/magic-mouse.css" />
+````
 
 ### Include the js file to the bottom of your HTML file (right before the end of body tag) :
-
-    <script type="text/javascript" src="dist/magic_mouse.js"></script>
-
+````html
+  <script type="text/javascript" src="dist/magic_mouse.js"></script>
+````
 ### Insert your options and initialize :
-
-    <script type="text/javascript">
-	    options = {
-	        "cursorOuter": "circle-basic",
-	        "hoverEffect": "circle-move",
-	        "hoverItemMove": false,
-	        "defaultCursor": false,
-	        "outerWidth": 30,
-	        "outerHeight": 30
-	      };
-	    magicMouse(options);
-    </script>
-
+````html
+<script type="text/javascript">
+    options = {
+	"cursorOuter": "circle-basic",
+	"hoverEffect": "circle-move",
+	"hoverItemMove": false,
+	"defaultCursor": false,
+	"outerWidth": 30,
+	"outerHeight": 30
+      };
+    magicMouse(options);
+</script>
+````
 ### Hover effect :
 If you want your mouse have elegant hover effect, don't forget to add the class "magic-hover" to the element you want it have hover effect, for example :
-
-    <a class="magic-hover magic-hover__square">download</a>
-
+````html
+  <a class="magic-hover magic-hover__square">download</a>
+````
 # Configuration list (updating):
 | Variable name | Value |
 |--|--|
