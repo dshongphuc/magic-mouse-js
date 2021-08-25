@@ -41,7 +41,7 @@ If you want your mouse have elegant hover effect, don't forget to add the class 
 ````
 
 ### Disable Magicmouse on an element:
-Sometime you just don't want to use Magicmouse on some specific elements? The you just need to add `no-cursor` class to that element:
+Sometime you just don't want to use Magicmouse on some specific elements? Then you just need to add `no-cursor` class to that element:
 ````html
 <div class="no-cursor">...</div>
 ````
