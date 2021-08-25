@@ -100,6 +100,23 @@ function magicMouse(options) {
       });
     });
 
+    // sometime we just don't want to use magicmouse on some specific elements:
+    const noCursorEls = document.querySelectorAll(".no-cursor");
+    noCursorEls.forEach((item, i) => {
+      item.addEventListener("mouseenter", event => {
+        cursorDOM.style.opacity = 0
+        pointerDOM.style.opacity = 0
+        document.body.style.cursor = "auto";
+      });
+
+      item.addEventListener("mouseleave", event => {
+        cursorDOM.style.opacity = 1
+        pointerDOM.style.opacity = 1
+        document.body.style.cursor = "none";
+      });
+    });
+
+
     //Move the cursorDOM:
     var movement = () => {
       if (cursorDOM) {
