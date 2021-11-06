@@ -18,7 +18,7 @@ If you want to install it to your project via npm: `npm i magicmouse.js`
 ## CDN
 If you want to include Magicmouse.js directly to your HTML, you can use this CDN. Include the js file to the bottom of your HTML file (right before the end of body tag):
 ````html  
-  <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1629862837/magicmouse/magic_mouse-1.2.1.js"></script>
+  <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js"></script>
 ````
 ## Initialize
 ### Insert your options and initialize :
