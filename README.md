@@ -1,5 +1,7 @@
 
 
+[![](https://badgen.net/github/stars/dshongphuc/magic-mouse-js?icon=github)](https://github.com/dshongphuc/magic-mouse-js)
+[![](https://badgen.net/npm/v/magicmouse.js?color=orange)](https://www.npmjs.com/package/magicmouse.js)
 # MagicMouse.js
 
 A lightweight javascript library to create some amazing effects for the mouse (cursor) on your website - MagicMouse.js : [https://magicmousejs.web.app/](https://magicmousejs.web.app)
@@ -8,18 +10,17 @@ A lightweight javascript library to create some amazing effects for the mouse (c
 There's more than 4 effects and I'm keep updating now, you can try other effect on https://magicmousejs.web.app/ by changing the example and click to "Try it" button.
 
 # Installation
-MagicMouse.js is a vanilla javascript library so you DON'T need to include any other library like jQuery.
-You just need to include 2 things to your HTML :
+MagicMouse.js is a vanilla javascript library so you DON'T need to include any other library like jQuery. There are two options to install it:
 
-### Put the CSS file to your head tag:
-````html
-  <link rel="stylesheet" href="dist/magic-mouse.css" />
-````
+## NPM
+If you want to install it to your project via npm: `npm i magicmouse.js`
 
-### Include the js file to the bottom of your HTML file (right before the end of body tag) :
-````html
-  <script type="text/javascript" src="dist/magic_mouse.js"></script>
+## CDN
+If you want to include Magicmouse.js directly to your HTML, you can use this CDN. Include the js file to the bottom of your HTML file (right before the end of body tag):
+````html  
+  <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1629862837/magicmouse/magic_mouse-1.2.1.js"></script>
 ````
+## Initialize
 ### Insert your options and initialize :
 ````html
 <script type="text/javascript">
@@ -51,13 +52,6 @@ Sometime you just don't want to use Magicmouse on some specific elements? Then y
 |--|--|
 | cursorOuter | Default: "circle-basic", other options : "disable" |
 | hoverEffect | default: "circle-move", other options : "pointer-blur", "pointer-overlay" |
-
-# CDN
-Magicmouse.js is on the cloud now, you don't even need to download it to your server :
-````html
-  <link rel="stylesheet" href="https://res.cloudinary.com/veseylab/raw/upload/v1629862837/magicmouse/magic-mouse-1.2.css" />
-  <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1629862837/magicmouse/magic_mouse-1.2.js"></script>
-````
 
 # What's next?
 You should have the nice effect for your mouse now, of course you can override the CSS code to make it more elegant and suitable with your website (change color, size,..).

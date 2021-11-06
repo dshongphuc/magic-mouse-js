@@ -1,16 +1,21 @@
 {
-  "name": "magic_mouse",
-  "version": "1.0.0",
+  "name": "magicmouse.js",
+  "version": "1.2.1",
   "description": "A Collection of mouse effects",
-  "main": "gulpfile.js",
-  "dependencies": {},
+  "main": "./dist/magic_mouse.js",
+  "homepage": "https://magicmousejs.web.app",
   "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "babel-plugin-remove-import-export": "^1.1.1",
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-plumber": "^1.2.1",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^5.0.0",
     "gulp-uglify-es": "^2.0.0",
-    "node-sass": "^4.13.1"
+    "node-sass": "^4.13.1",
+    "sass": "^1.43.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,6 +28,11 @@
     "mouse effect",
     "cursor effect"
   ],
-  "author": "Phuc Hong.",
-  "license": "MIT"
+  "author": "Phuc Hong <dshongphuc@gmail.com> (dshongphuc.com)",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/standalone": "^7.15.7",
+    "gulp-header": "^2.0.9",
+    "gulp-rename": "^2.0.0"
+  }
 }
