@@ -14,7 +14,7 @@
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^5.0.0",
     "gulp-uglify-es": "^2.0.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "sass": "^1.43.4"
   },
   "scripts": {
