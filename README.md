@@ -15,6 +15,8 @@ MagicMouse.js is a vanilla javascript library so you DON'T need to include any o
 ## NPM
 If you want to install it to your project via npm: `npm i magicmouse.js`
 
+After that, import to your project by: `import { magicMouse } from 'magicmouse.js'`
+
 ## CDN
 If you want to include Magicmouse.js directly to your HTML, you can use this CDN. Include the js file to the bottom of your HTML file (right before the end of body tag):
 ````html  
