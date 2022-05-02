@@ -16,11 +16,11 @@ module.exports = {
     runtimeChunk: 'single'
   },
   watch: true,
-  plugins: [
-    // new HtmlWebpackPlugin({
-    //   title: 'Developments',
-    // }),
-    new MiniCssExtractPlugin()
+  plugins: [    
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+    }),    
+    new MiniCssExtractPlugin(),    
   ],
   output: {
     filename: '[name].bundle.js',
@@ -46,6 +46,10 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
+      {
+        test: /\.(html)$/,
+        use: ['html-loader']
+      }
     ],
   },  
   

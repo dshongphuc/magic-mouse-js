@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
 
 
-  <link rel="stylesheet" href="css/website.css" />
+  <link rel="stylesheet" href="scss/website.scss" />
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161480435-1"></script>
@@ -32,7 +32,7 @@
   <div id="app">
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <a href="#" class="navbar-brand"><img src="images/logo.svg" alt=""></a>
+        <a href="#" class="navbar-brand"><img src="./assets/images/logo.svg" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -81,84 +81,9 @@ magicMouse(options);
     </div>
   </div>
 
-  <script src="index.bundle.js"></script>
-  <script src="runtime.bundle.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/run_prettify.js"></script>
-  <!-- 
-  <script type="module">
+  <script src="./js/index.js"></script>
+  <!-- <script src="../dist/runtime.bundle.js"></script> -->
 
-    var app = new Vue({
-      el: "#app",
-      data: {
-        selectedEffect: 'example #1',
-        effectList: [
-          "example #1",
-          "example #2",
-          "example #3",
-          "example #4",
-          "example #5",
-        ],
-        options: {
-          cursorOuter: "circle-basic",
-          hoverEffect: "circle-move",
-          hoverItemMove: false,
-          defaultCursor: false,
-          outerWidth: 30,
-          outerHeight: 30
-        }
-      },
-      mounted() {
-        magicMouse(this.options);
-        prettier();
-      },
-      methods: {
-        changeEffect() {
-          document.body.style.cursor = "unset";
-          var cursorDOM = document.getElementById("magicMouseCursor");
-          var pointerDOM = document.getElementById("magicPointer");
-          if (cursorDOM) {
-            cursorDOM.parentNode.removeChild(cursorDOM)
-          }
-          if (pointerDOM) {
-            pointerDOM.parentNode.removeChild(pointerDOM)
-          }
-          switch (this.selectedEffect) {
-            case "example #1":
-              this.options.hoverEffect = "circle-move"
-              this.options.cursorOuter = "circle-basic"
-              break;
-            case "example #2":
-              this.options.hoverEffect = "pointer-overlay"
-              this.options.cursorOuter = "disable"
-              break;
-            case "example #3":
-              this.options.hoverEffect = "pointer-blur"
-              this.options.cursorOuter = "disable"
-              break;
-            case "example #4":
-              this.options.outerWidth = 41;
-              this.options.outerHeight = 41;
-              this.options.hoverEffect = "pointer-blur"
-              this.options.cursorOuter = "circle-basic"
-              break;
-            case "example #5":
-              this.options.outerWidth = 41;
-              this.options.outerHeight = 41;
-              this.options.hoverEffect = "circle-move"
-              this.options.cursorOuter = "circle-basic"
-              this.options.defaultCursor = true
-              break;
-          }
-          magicMouse(this.options);
-
-          let codeBlock = document.getElementById("codeSection")
-          codeBlock.classList.remove("prettyprinted")
-          codeBlock.innerHTML = "options = " + JSON.stringify(this.options, null, 2) + "; \n magicMouse(options);";
-          prettier();
-        }
-      },
-    });
-  </script> -->
 </body>
 
 </html>

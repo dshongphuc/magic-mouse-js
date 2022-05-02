@@ -24,8 +24,9 @@ const app = createApp({
         }
     },
     mounted() {
-        magicMouse(this.options);
+        magicMouse(this.options);        
         // prettier();
+
     },
     methods: {
         changeEffect() {
@@ -69,8 +70,7 @@ const app = createApp({
 
           let codeBlock = document.getElementById("codeSection")
           codeBlock.classList.remove("prettyprinted")
-          codeBlock.innerHTML = "options = " + JSON.stringify(this.options, null, 2) + "; \n magicMouse(options);";
-          prettier();
+          codeBlock.innerHTML = "options = " + JSON.stringify(this.options, null, 2) + "; \n magicMouse(options);";          
         }
       },
 })
