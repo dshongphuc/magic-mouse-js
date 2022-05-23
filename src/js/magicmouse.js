@@ -1,14 +1,11 @@
 import '../scss/style.scss'
 require('./vendor/modernizr')
+import Options from './options'
 
-export const magicMouse = (options) => {
-    const addStyles = () => {    
-      let magicmouseStyle = document.createElement('style')
-      magicmouseStyle.type = 'text/css'
-      magicmouseStyle.innerText = STYLES
-      document.head.appendChild(magicmouseStyle)
-    }
-  
+export const magicMouse = (options) => {  
+    const opt = new Options(options)
+    console.log('testing: ', opt)
+
     // I believe we don't want this cursor on tablet/mobile
     if (!Modernizr.touchevents){
       options = options || {};
@@ -214,4 +211,14 @@ export const magicMouse = (options) => {
   }
   
   
-  export default magicMouse
+  export default class Magicmouse {
+    constructor(el, options) {
+      this.element = el
+
+      if (typeof this.element === "string") {
+        this.element = document.querySelector(this.element);
+      }
+
+      this.options = options
+    }
+  }

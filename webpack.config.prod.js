@@ -6,6 +6,7 @@ module.exports = {
   mode: 'production',    
   entry: {
     index: './src/js/index.js',
+    magicmouse: './src/js/magicmouse.js',
   },
   devtool: 'source-map',
   plugins: [    

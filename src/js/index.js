@@ -1,4 +1,4 @@
-import magicMouse from "./magicmouse";
+import {magicMouse} from "./magicmouse";
 import '../scss/website.scss'
 import { createApp } from 'vue/dist/vue.esm-bundler'
 
@@ -14,7 +14,7 @@ const app = createApp({
               "example #5",
             ],
             options: {
-              cursorOuter: "circle-basic",
+              outerStyle: "circle",
               hoverEffect: "circle-move",
               hoverItemMove: false,
               defaultCursor: false,
