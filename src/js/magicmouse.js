@@ -7,17 +7,9 @@ export const magicMouse = (options) => {
     console.log('testing: ', opt)
 
     // I believe we don't want this cursor on tablet/mobile
-    if (!Modernizr.touchevents){
-      options = options || {};
-      options.outerWidth = options.outerWidth || 30;
-      options.outerHeight = options.outerHeight || 30;
-      options.cursorOuter = options.cursorOuter || "circle-basic";
-      options.hoverEffect = options.hoverEffect || "circle-move";
-      options.hoverItemMove = options.hoverItemMove || false;
-      options.defaultCursor = options.defaultCursor || false;
-  
+    if (!Modernizr.touchevents){        
       // Add cursor DOM to body :
-      if ("disable" != options.cursorOuter) {
+      if ("disable" != options.outerStyle) {
         var newCursorDOM = document.createElement("div");
         newCursorDOM.setAttribute("id", "magicMouseCursor");
         document.body.appendChild(newCursorDOM);
