@@ -3,11 +3,11 @@ require('./vendor/modernizr')
 import Options from './options'
 
 export const magicMouse = (options) => {  
-    const opt = new Options(options)
-    console.log('testing: ', opt)
+    options = new Options(options)
 
     // I believe we don't want this cursor on tablet/mobile
-    if (!Modernizr.touchevents){        
+    if (!Modernizr.touchevents){
+
       // Add cursor DOM to body :
       if ("disable" != options.outerStyle) {
         var newCursorDOM = document.createElement("div");
@@ -15,7 +15,9 @@ export const magicMouse = (options) => {
         document.body.appendChild(newCursorDOM);
   
         // Select the cursor DOM which has been added to body before:
-        var cursorDOM = document.getElementById("magicMouseCursor");        
+        var cursorDOM = document.getElementById("magicMouseCursor");   
+        
+        // @TODO: add more styles for cursorDOM (circle, square, diamond)
       }
   
       // Check if user wanna use our custom cursor or not
