@@ -1,24 +1,13 @@
 {
   "name": "magicmouse.js",
-  "version": "1.2.1",
-  "description": "A Collection of mouse effects",
-  "main": "./dist/magic_mouse.js",
+  "version": "2.0.0",
+  "description": "A lightweight javascript library to create some amazing effects for the mouse (cursor) on your website",
   "homepage": "https://magicmousejs.web.app",
-  "devDependencies": {
-    "@babel/core": "^7.15.5",
-    "@babel/preset-env": "^7.15.6",
-    "babel-plugin-remove-import-export": "^1.1.1",
-    "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2",
-    "gulp-babel": "^8.0.0",
-    "gulp-plumber": "^1.2.1",
-    "gulp-sass": "^5.0.0",
-    "gulp-uglify-es": "^2.0.0",
-    "node-sass": "^4.13.1",
-    "sass": "^1.43.4"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production webpack --config webpack.config.prod.js",
+    "dev": "webpack serve --open",
+    "watch": "webpack --watch"
   },
   "keywords": [
     "magic",
@@ -30,9 +19,23 @@
   ],
   "author": "Phuc Hong <dshongphuc@gmail.com> (dshongphuc.com)",
   "license": "MIT",
+  "devDependencies": {
+    "css-hot-loader": "^1.4.4",
+    "css-loader": "^6.7.1",
+    "html-loader": "^3.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
   "dependencies": {
-    "@babel/standalone": "^7.15.7",
-    "gulp-header": "^2.0.9",
-    "gulp-rename": "^2.0.0"
+    "lodash": "^4.17.21",
+    "node-sass": "^7.0.1",
+    "ramda": "^0.28.0",
+    "vue": "^3.2.33"
   }
 }

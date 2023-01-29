@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>MagicMouse.js - effects for cursor on website</title>
+  <meta name="description"
+    content="A lightweight javascript library to create some amazing effects for the mouse (cursor) on your website">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="scss/website.scss" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161480435-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-161480435-1');
+  </script>
+
+
+</head>
+
+<body>
+
+  <div id="app">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a href="#" class="navbar-brand"><img src="./assets/images/logo.svg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link magic-hover magic-hover__square" href="#">home <span
+                  class="sr-only">(current)</span></a>
+            </li>
+            <li><a href="#" class="nav-link magic-hover magic-hover__square">about</a></li>
+            <li><a href="#" class="nav-link magic-hover magic-hover__square">how it works</a></li>
+            <li><a href="#" class="nav-link magic-hover magic-hover__square">blog</a></li>
+            <li><a class="nav-link no-cursor">No cursor</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container main-body">
+      <div class="row">
+        <div class="col-6 code-section">
+          <pre id="codeSection" class="prettyprint">options = {{options}}
+magicMouse(options);
+            </pre>
+          <div class="try-section">
+            <select class="form-control form-control-sm" v-model="selectedEffect">
+              <option v-for="effect in effectList" :value="effect">{{effect}}</option>
+            </select>
+            <button class="btn btn-mm-dark magic-hover magic-hover__square" @click="changeEffect()">Try it</button>
+          </div>
+
+        </div>
+        <div class="col-6 text-section">
+          <h1>magicmouse.js</h1>
+          <p>An opensource library that help you to create some magic effects for the mouse (cursor) of your website.
+          </p>
+          <div class="btn-section">
+            <a href="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js"
+              download class="btn btn-mm-light magic-hover magic-hover__square">download</a>
+            <a href="https://github.com/dshongphuc/magic-mouse-js"
+              class="btn btn-mm-dark github-icon magic-hover magic-hover__square" target="_blank"> github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/index.js"></script>
+  <!-- <script src="../dist/runtime.bundle.js"></script> -->
+
+</body>
+
+</html>
