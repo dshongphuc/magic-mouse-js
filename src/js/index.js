@@ -1,4 +1,4 @@
-import {magicMouse} from "./magicmouse";
+import { magicMouse } from "./magicmouse";
 import '../scss/website.scss'
 import { createApp } from 'vue/dist/vue.esm-bundler'
 
@@ -24,7 +24,7 @@ const app = createApp({
         }
     },
     mounted() {
-        magicMouse(this.options);        
+        magicMouse(this.options);
         // prettier();
 
     },

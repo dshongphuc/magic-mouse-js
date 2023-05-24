@@ -1,0 +1,7 @@
+/*! MagicMouse.js - v2.0.0
+* A lightweight javascript library to create some amazing effects for the mouse (cursor) on your website
+* https://github.com/dshongphuc/magic-mouse-js
+* Copyright (c) 2023 Phuc H. <dshongphuc@gmail.com> under MIT license; */
+
+/*! modernizr 3.6.0 (Custom Build) | MIT *
+   * https://modernizr.com/download/?-touchevents-setclasses !*/

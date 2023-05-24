@@ -78,7 +78,7 @@ export default class Options {
      * @param {Any}} value 
      * @return {Boolean}
      */
-    isValid(key, value) {        
+    isValid(key, value) {             
         // check if key is acceptable:
         const acceptedKey = pluck('name', allowedTypes)
 
@@ -87,7 +87,7 @@ export default class Options {
             console.error(`${key} is not a valid option`)
             return false
         }        
-
+        
         // check if the type of value is valid:
         const allowedOption = this.getOptionByKey(key)
         let isTypeValid = false
@@ -106,7 +106,11 @@ export default class Options {
                 isTypeValid = false
                 break;
         }
-
+        
+        if(!isTypeValid)  {            
+            console.error(`${value} is not a valid value for ${key}`)
+        }
+        
         return isTypeValid
     }
 

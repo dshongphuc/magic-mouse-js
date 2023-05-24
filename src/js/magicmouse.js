@@ -1,8 +1,14 @@
+/*! MagicMouse.js - v2.0.0
+* A lightweight javascript library to create some amazing effects for the mouse (cursor) on your website
+* https://github.com/dshongphuc/magic-mouse-js
+* Copyright (c) 2023 Phuc H. <dshongphuc@gmail.com> under MIT license; */
+
 import '../scss/style.scss'
 require('./vendor/modernizr')
 import Options from './options'
 
-export const magicMouse = (options) => {  
+export const magicMouse = (options) => {
+  console.log(options)
     options = new Options(options)
 
     // I believe we don't want this cursor on tablet/mobile
@@ -205,14 +211,4 @@ export const magicMouse = (options) => {
   }
   
   
-  export default class Magicmouse {
-    constructor(el, options) {
-      this.element = el
-
-      if (typeof this.element === "string") {
-        this.element = document.querySelector(this.element);
-      }
-
-      this.options = options
-    }
-  }
+  export default magicMouse
