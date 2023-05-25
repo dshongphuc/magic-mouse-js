@@ -1,5 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const PACKAGE = require('./package.json');
+const version = PACKAGE.version;
 
 module.exports = {
   mode: 'production',    
@@ -10,7 +12,7 @@ module.exports = {
     new MiniCssExtractPlugin(),    
   ],
   output: {
-    filename: '[name].cdn.min.js',
+    filename: `[name]-${version}.cdn.min.js`,
     path: path.resolve(__dirname, 'built'),
     library: {
       name: 'magicMouse',
