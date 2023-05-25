@@ -1,30 +1,24 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  mode: 'development',    
+  mode: 'production',    
   entry: {
-    index: './src/js/index.js',
+    magicmouse: './src/js/magicmouse.js',
   },
-  devtool: 'inline-source-map',
-  devServer: {
-    static: './dist',
-    hot: true,    
-  },
-  optimization: {
-    runtimeChunk: 'single'
-  },
-  watch: true,
-  plugins: [    
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
-    }),    
+  devtool: 'source-map',
+  plugins: [     
     new MiniCssExtractPlugin(),    
   ],
   output: {
-    filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].min.js',
+    path: path.resolve(__dirname, 'built'),
+    library: {
+      type: 'module',
+    },
+  },
+  experiments: {
+    outputModule: true,
   },
   module: {
     rules: [
@@ -50,6 +44,5 @@ module.exports = {
         use: ['html-loader']
       }
     ],
-  },  
-  
+  },    
 };

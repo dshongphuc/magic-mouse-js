@@ -3,9 +3,10 @@
   "version": "2.0.0",
   "description": "A lightweight javascript library to create some amazing effects for the mouse (cursor) on your website",
   "homepage": "https://magicmousejs.web.app",
+  "main": "built/magicmouse.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "NODE_ENV=production webpack --config webpack.config.prod.js",
+    "build": "NODE_ENV=production webpack --config webpack.config.prod.js && webpack --config webpack.config.npm.js && webpack --config webpack.config.cdn.js",
     "dev": "webpack serve --open",
     "watch": "webpack --watch"
   },
@@ -32,8 +33,7 @@
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4"
   },
-  "dependencies": {
-    "lodash": "^4.17.21",
+  "dependencies": {    
     "node-sass": "^7.0.1",
     "ramda": "^0.28.0",
     "vue": "^3.2.33"
