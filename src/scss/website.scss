@@ -167,9 +167,34 @@ pre.prettyprint {
     background: #22252c;
     color: #fff;
     font-family: "Quicksand", sans-serif;
+    min-height: 100vh;
 
     #codeSection {
         color: #fff;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 30px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 17px;
+      letter-spacing: 1px;
+
+      a {
+        color: #EB5757;
+        font-weight: 600;
+        padding: 2px 5px;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      .heart {
+        color: #EB5757;
+      }
     }
   }
   body .container-fluid nav {
