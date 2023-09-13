@@ -50,12 +50,7 @@ const app = createApp({
           break
       }
     },
-    printOptions() {
-      let codeBlock = document.getElementById("codeSection")
-      codeBlock.classList.remove("prettyprinted")
-      codeBlock.innerHTML =
-        "options = " + JSON.stringify(this.options, null, 2) + "\nmagicMouse(options);"
-    },
+
     changeEffect() {
       document.body.style.cursor = "unset"
       var cursorDOM = document.getElementById("magicMouseCursor")
@@ -67,16 +62,12 @@ const app = createApp({
         pointerDOM.parentNode.removeChild(pointerDOM)
       }
       this.setSelectedEffect(this.selectedEffect)
-      this.printOptions()
       magicMouse(this.options)
     },
   },
   watch: {
     selectedEffect() {
       this.setSelectedEffect()
-      this.$nextTick(() => {
-        this.printOptions()
-      })
     },
   },
 })
