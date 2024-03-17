@@ -56,7 +56,7 @@ Sometime you just don't want to use Magicmouse on some specific elements? Then y
 | hoverEffect | default: "circle-move", other options : "pointer-blur", "pointer-overlay" |
 
 # License ❤️
-This package is totally free to use. However, if you want to use Magicmouse.js in your commercial projects, I required you to do a good thing for the poor people in your place. You can do whatever you think it's "a good thing", like buy them some food, give them some money,..etc... 
+This package is totally free to use. However, if you want to use Magicmouse.js in your commercial projects, I require you to do a good thing for the poor people in your place. You can do whatever you think is "a good thing", like buy them some food, give them some money, etc. 
 I'm not requiring you to take a photo or do anything to prove it, just do it and you will feel great about yourself :)
 Let's make the world better place. 
 
