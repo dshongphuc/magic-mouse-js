@@ -20,7 +20,7 @@ After that, import to your project by: `import { magicMouse } from 'magicmouse.j
 ## CDN
 If you want to include Magicmouse.js directly to your HTML, you can use this CDN. Include the js file to the bottom of your HTML file (right before the end of body tag):
 ````html  
-  <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js"></script>
+  <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1684982764/magicmouse-2.0.0.cdn.min.js"></script>
 ````
 ## Initialize
 ### Insert your options and initialize :
@@ -56,7 +56,7 @@ Sometime you just don't want to use Magicmouse on some specific elements? Then y
 | hoverEffect | default: "circle-move", other options : "pointer-blur", "pointer-overlay" |
 
 # License ❤️
-This package is totally free to use. However, if you want to use Magicmouse.js in your commercial projects, I required you to do a good thing for the poor people in your place. You can do whatever you think it's "a good thing", like buy them some food, give them some money,..etc... 
+This package is totally free to use. However, if you want to use Magicmouse.js in your commercial projects, I require you to do a good thing for the poor people in your place. You can do whatever you think is "a good thing", like buy them some food, give them some money, etc. 
 I'm not requiring you to take a photo or do anything to prove it, just do it and you will feel great about yourself :)
 Let's make the world better place. 
 
