@@ -18,7 +18,7 @@ const allowedTypes = [
         type: 'enum',
         required: false,
         default: 'circle',
-        allowed: ['circle', 'square', 'diamond', 'disable']
+        allowed: ['circle', 'square', 'diamond', 'disable', 'circle-basic']
     },
     {
         name: 'hoverEffect',
@@ -48,10 +48,10 @@ export default class Options {
         this.defaultOptions = this.generateDefault()
 
         // push user's options to default options one-by-one:
-        for(let key in options) {            
+        for(let key in options) {
             if(this.isValid(key, options[key])) {
                 this.defaultOptions[key] = options[key]
-            }  
+            }
         }
 
         return this.defaultOptions
@@ -66,7 +66,7 @@ export default class Options {
 
         let output = {}
         for(let key of acceptedKey) {
-            output[key] = this.getOptionByKey(key)['default']            
+            output[key] = this.getOptionByKey(key)['default']
         }
 
         return output
@@ -74,11 +74,11 @@ export default class Options {
 
     /**
      * This function is to check if an option is valid or not
-     * @param {String} key 
-     * @param {Any}} value 
+     * @param {String} key
+     * @param {Any}} value
      * @return {Boolean}
      */
-    isValid(key, value) {             
+    isValid(key, value) {
         // check if key is acceptable:
         const acceptedKey = pluck('name', allowedTypes)
 
@@ -86,8 +86,8 @@ export default class Options {
             // throw new Error(`${key} is not a valid option`)
             console.error(`${key} is not a valid option`)
             return false
-        }        
-        
+        }
+
         // check if the type of value is valid:
         const allowedOption = this.getOptionByKey(key)
         let isTypeValid = false
@@ -106,11 +106,11 @@ export default class Options {
                 isTypeValid = false
                 break;
         }
-        
-        if(!isTypeValid)  {            
+
+        if(!isTypeValid)  {
             console.error(`${value} is not a valid value for ${key}`)
         }
-        
+
         return isTypeValid
     }
 

@@ -68,6 +68,7 @@ const app = createApp({
   watch: {
     selectedEffect() {
       this.setSelectedEffect()
+      this.changeEffect()
     },
   },
 })
