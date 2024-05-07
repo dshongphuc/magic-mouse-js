@@ -18,7 +18,7 @@ const allowedTypes = [
         type: 'enum',
         required: false,
         default: 'circle',
-        allowed: ['circle', 'square', 'diamond', 'disable', 'circle-basic']
+        allowed: ['circle', 'square', 'diamond', 'disable']
     },
     {
         name: 'hoverEffect',

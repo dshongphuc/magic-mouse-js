@@ -25,7 +25,7 @@ const app = createApp({
       switch (this.selectedEffect) {
         case "example #1":
           this.options.hoverEffect = "circle-move"
-          this.options.outerStyle = "circle-basic"
+          this.options.outerStyle = "circle"
           break
         case "example #2":
           this.options.hoverEffect = "pointer-overlay"
@@ -39,13 +39,13 @@ const app = createApp({
           this.options.outerWidth = 41
           this.options.outerHeight = 41
           this.options.hoverEffect = "pointer-blur"
-          this.options.outerStyle = "circle-basic"
+          this.options.outerStyle = "circle"
           break
         case "example #5":
           this.options.outerWidth = 41
           this.options.outerHeight = 41
           this.options.hoverEffect = "circle-move"
-          this.options.outerStyle = "circle-basic"
+          this.options.outerStyle = "circle"
           this.options.defaultCursor = true
           break
       }
