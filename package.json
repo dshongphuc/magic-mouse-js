@@ -36,6 +36,6 @@
   "dependencies": {    
     "node-sass": "^7.0.1",
     "ramda": "^0.28.0",
-    "vue": "^3.2.33"
+    "vue": "^3.3.5"
   }
 }
