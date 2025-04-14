@@ -34,7 +34,7 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {    
-    "node-sass": "^7.0.1",
+    "node-sass": "^7.0.2",
     "ramda": "^0.28.0",
     "vue": "^3.2.33"
   }
